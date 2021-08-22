@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
 class ButtonWidget extends StatelessWidget {
-  final String label;
-  final TextStyle textStyle;
+
+  final Widget child;
   final Color background;
   final Color? borderColor;
   final VoidCallback onTap;
 
   const ButtonWidget({
     Key? key,
-    required this.label,
-    required this.textStyle,
+    required this.child,
     required this.background,
     this.borderColor,
     required this.onTap,
@@ -32,15 +31,7 @@ class ButtonWidget extends StatelessWidget {
         backgroundColor: MaterialStateProperty.all<Color>(background)
       ),
       onPressed: onTap,
-      child: new Center(
-        child: new Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: new Text(
-            label,
-            style: textStyle,
-          ),
-        ),
-      ),
+      child: child
     );
   }
 }

@@ -7,7 +7,7 @@ class InputWidget extends StatelessWidget {
   final String label;
   final TextInputType keyboardType;
   final TextEditingController controller;
-  final IconData? icon;
+  final Icon? icon;
   final String? initialValue;
   final String? Function(String?)? validator;
   final bool isPass;
@@ -20,7 +20,7 @@ class InputWidget extends StatelessWidget {
     this.icon,
     this.initialValue,
     this.validator,
-    required this.isPass,
+    this.isPass = false,
   }) : super(key: key);
 
   @override
@@ -28,8 +28,8 @@ class InputWidget extends StatelessWidget {
     return new Container(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       decoration: new BoxDecoration(
-        color: Colors.grey.shade100,
-        borderRadius: BorderRadius.circular(50)
+        color: Colors.grey.shade200,
+        borderRadius: BorderRadius.circular(7)
       ),
       child: new TextFormField(
         keyboardType: keyboardType,
@@ -40,10 +40,7 @@ class InputWidget extends StatelessWidget {
         decoration: new InputDecoration(
           hintText: label,
           hintStyle: AppTextStyles.input,
-          icon: new Icon(
-            icon, size: 26,
-            color: AppColors.body,
-          ),
+          icon: icon,
           border: InputBorder.none
         ),
       ),

@@ -19,6 +19,11 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.background,
   );
+  static final titleHeading = GoogleFonts.lexendDeca(
+    fontSize: 25,
+    fontWeight: FontWeight.w600,
+    color: AppColors.heading,
+  );
   static final titleRegular = GoogleFonts.lexendDeca(
     fontSize: 20,
     fontWeight: FontWeight.w400,
