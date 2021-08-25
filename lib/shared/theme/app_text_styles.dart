@@ -84,6 +84,11 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.primary,
   );
+  static final trailingBackground = GoogleFonts.lexendDeca(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: AppColors.background,
+  );
   static final trailingRegular = GoogleFonts.lexendDeca(
     fontSize: 16,
     fontWeight: FontWeight.w400,
@@ -112,7 +117,7 @@ class AppTextStyles {
   static final buttonGray = GoogleFonts.inter(
     fontSize: 15,
     fontWeight: FontWeight.w400,
-    color: AppColors.grey,
+    color: AppColors.secondary,
   );
   static final buttonBackground = GoogleFonts.inter(
     fontSize: 15,
@@ -137,7 +142,7 @@ class AppTextStyles {
   static final buttonBoldGray = GoogleFonts.inter(
     fontSize: 15,
     fontWeight: FontWeight.w700,
-    color: AppColors.grey,
+    color: AppColors.secondary,
   );
   static final buttonBoldBackground = GoogleFonts.inter(
     fontSize: 15,
@@ -208,5 +213,10 @@ class AppTextStyles {
     fontSize: 13,
     fontWeight: FontWeight.w600,
     color: AppColors.primary
+  );
+  static final captionDate = GoogleFonts.inter(
+    fontSize: 11,
+    fontWeight: FontWeight.w400,
+    color: AppColors.body,
   );
 }

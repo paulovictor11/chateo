@@ -28,7 +28,7 @@ class InputWidget extends StatelessWidget {
     return new Container(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       decoration: new BoxDecoration(
-        color: Colors.grey.shade200,
+        color: AppColors.input,
         borderRadius: BorderRadius.circular(7)
       ),
       child: new TextFormField(
@@ -39,7 +39,7 @@ class InputWidget extends StatelessWidget {
         initialValue: initialValue,
         decoration: new InputDecoration(
           hintText: label,
-          hintStyle: AppTextStyles.input,
+          hintStyle: AppTextStyles.buttonHeading,
           icon: icon,
           border: InputBorder.none
         ),

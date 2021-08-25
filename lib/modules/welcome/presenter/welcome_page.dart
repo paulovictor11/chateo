@@ -17,17 +17,17 @@ class _WelcomePageState extends State<WelcomePage> {
     return new Scaffold(
       backgroundColor: AppColors.background,
       body: new Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(24),
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            new SizedBox(height: 135),
+            new SizedBox(height: 64),
             new Container(
               width: 262,
               height: 271,
-              color: Colors.grey.shade200,
+              color: AppColors.input,
             ),
-            new SizedBox(height: 42),
+            new SizedBox(height: 48),
             new Text(
               'Connect easily with your family and friends over countries',
               textAlign: TextAlign.center,
@@ -38,7 +38,7 @@ class _WelcomePageState extends State<WelcomePage> {
               onTap: () {},
               background: AppColors.background,
               child: new Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8),
                 child: new Text(
                   'Terms & Privacy Policy',
                   style: AppTextStyles.trailingRegular,
@@ -50,14 +50,14 @@ class _WelcomePageState extends State<WelcomePage> {
               onTap: () => Modular.to.pushNamed('/phone'),
               background: AppColors.primary,
               child: new Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8),
                 child: new Text(
                   'Start Messaging',
                   style: AppTextStyles.titleListTileBackground,
                 ),
               ),
             ),
-            new SizedBox(height: 12),
+            new SizedBox(height: 8),
           ],
         ),
       ),
